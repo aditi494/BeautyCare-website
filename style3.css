@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;
+    background-color: #ffffff;
+    animation: screenAnimate 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+#overlay img{
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: logoAnimate 2s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
+}
+#overlay #line1{
+    position: absolute;
+    left: 20%;
+    width: 2px;
+    height: 100%;
+    background-color: #F68F8F;
+    animation: lineAnimate 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+#overlay #line2{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    width: 2px;
+    height: 100%;
+    background-color: #F68F8F;
+    animation: lineAnimate 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#back{
+    width: 100%;
+    height: 70%;
+   /* background-color:rgb(250,185,185);*/
+   background-image: url(photo1.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding: 0 50px;
+}
+
+
+#nav h1{
+    color: rgb(226,154,154);
+    font-weight: 300;
+    padding: 10px;
+    margin: 10px;
+    font-style: 'Montserrat', sans-serif;
+}
+ 
+#links button{
+    padding: 9px 17px;
+    background-color: transparent;
+    border: 1px solid rgb(226, 154, 154);
+    margin-left: 10px;
+    color: rgb(226,154,154);
+    border-radius: 5px;
+    outline: none;
+}
+
+#links button:hover{
+    cursor:pointer;
+    background-color: rgb(252,211,211);
+    color: white;
+    border-color: rgb(252,211,211);
+    }
+
+#gradient{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: linear-gradient(to right, rgba(255,217,217,0.87), transparent);
+}
+#text{
+    width: 100%;
+    padding: 140px 60px;
+    }
+#text h1{
+        font-weight: 400;
+        line-height: 23px;
+        color: rgb(197,125,125);
+        font-family: 'Montserrat', sans-serif;
+}
+#input{
+   /* background-color: brown;*/
+    dispay:flex;
+    align-items: center;
+    margin-top: 30px;
+    }
+#input input{
+    padding: 12px 20px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    
+}
+#input button{
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: rgb(143, 25, 25);
+}
+#input button:hover{
+    cursor:pointer;
+    background-color: rgb(252,211,211);
+    color: white;
+    border-color: rgb(252,211,211);
+    }
+#input input::placeholder{
+    opacity: 0.7;
+}
+#ri{
+    
+   /* margin-top: 10px;*/
+   padding: 20px; 
+   width: 100%;
+    min-height:560px;
+   /* background-color: salmon;*/
+}
+
+
+#ri1{
+    position: relative;
+    width: 80%;
+    min-height: 560px;
+    /*background-color:white;*/
+    margin: 0 auto;
+    }
+#ri1 h1{
+    color: rgb(184, 95, 95);
+}
+#ri1 p{
+    line-height: 10px;
+    margin-top: 10px;
+    opacity: 0.7;
+} 
+#ri1 img{
+   position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 500px;
+
+} 
+#jewellary{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgba(252, 211, 211, 0.959);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}      
+#con{
+    width: 95%;
+    min-height: 300px;
+    /*background-color: rgb(219, 191, 32);*/
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    margin: 0 auto;
+}
+#jewellary h1{
+    padding-top: 30px;
+    color: rgb(197,125,125);
+}
+#jewellary p{
+    color: rgb(197,125,125);
+    padding-top: 5px;
+}
+#circle{
+    width: 100%;
+   /* background-color: royalblue;*/
+    min-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+}
+.class{
+    width: 170px;
+    height: 170px;
+    /*background-color: black;*/
+    border-radius: 50%;
+    border: 12px solid #ffffff;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 10px 0 rgb(226,154,154);
+    margin-top: 5px;
+}
+#one{
+    background-image: url(j1.jpg);
+
+}
+#two{
+    background-image: url(j2.jpg);
+}
+#three{
+    background-image: url(j3.jpg);
+
+}
+#four{
+     background-image: url(j4.jpg);
+}
+#text1{
+    width: 100%;
+    min-height: 200px;
+    /*background-color: rosybrown;*/
+}
+#container1{
+    padding: 25px;
+    width: 60%;
+    min-height: 200px;
+    /*background-color:brown;*/
+    margin: 0 auto;
+}
+#container1 h1{
+    color: rgb(184, 95, 95);
+}
+#container1 p{
+    margin-top: 10px;
+    color: rgb(184, 95, 95);
+    line-height: 10px;
+}
+
+#input1{
+    width: 100%;
+    /*background-color: royalblue;*/
+    margin-top: 10px;
+}
+#input1 input{
+    width: 35%;
+    background-color: rgb(252,193,193);
+    border:none;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+#input1 input::placeholder{
+    color: #ffffff;
+}
+#input1 button{
+    width: 15%;
+    margin-left: 10px;
+    border-color: rgb(252,193,193);
+    color: rgb(248, 193, 193);
+    height: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+#input1 button:hover{
+    cursor:pointer;
+    background-color: rgb(252,211,211);
+    color: white;
+    border-color: rgb(252,211,211);
+    }
+#jewellary1{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgba(252, 211, 211, 0.959);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}      
+#con{
+    width: 95%;
+    min-height: 300px;
+    /*background-color: rgb(219, 191, 32);*/
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    margin: 0 auto;
+}
+#jewellary1 h1{
+    padding-top: 30px;
+    color: rgb(197,125,125);
+}
+#jewellary1 p{
+    color: rgb(197,125,125);
+    padding-top: 5px;
+}
+#circle1{
+    width: 100%;
+   /* background-color: royalblue;*/
+    min-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+    margin-top: 5px;
+}
+.class1{
+    width: 180px;
+    height: 180px;
+    /*background-color: black;*/
+    border-radius: 50%;
+    border: 12px solid #ffffff;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 10px 0 rgb(226,154,154);
+}
+#one1{
+    background-image: url(w1.jpg);
+
+}
+#two1{
+    background-image: url(w2.jpg);
+}
+#three1{
+    background-image: url(w3.jpg);
+
+}
+#four1{
+     background-image: url(w4.jpg);
+}
+#adi{
+    width: 50%;
+    min-height: 190px;
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+#adi h1{
+    color: rgb(143, 25, 25);
+    font-style: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    
+}
+#di{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(252, 211, 211, 0.959);
+}
+#di h3{
+    padding: 0 50px;
+    padding-top: 20px;
+    color: rgb(184, 95, 95);
+}
+#parent{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    flex-direction: none;
+    color: rgb(143, 25, 25);
+    margin-top: 20px;
+}
+@keyframes lineAnimate{
+    from{
+        height: 100%;
+    }
+    to{
+        height: 0;
+    }
+}
+
+@keyframes logoAnimate{
+    from{
+        transform: translate(-50%,-50%) scale(1);
+    }
+    to{
+        transform: translate(-50%,-50%) scale(0);
+    }
+}
+
+@keyframes screenAnimate{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
